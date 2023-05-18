@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Fraunces, arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+h1,
+p,
+span,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.card-display-img-mobile {
+  display: none;
+}
+img {
+  max-width: 100%;
+}
+.card-display {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+.card-display-text {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0px 10px 10px 0px;
+}
+.card-display-img {
+  border-radius: 10px 0px 0px 10px;
+}
+.perfume-titulo {
+  font-size: 2.5rem;
+  font-family: "Climate Crisis", cursive;
+  font-family: "Fraunces", serif;
+  line-height: 2rem;
+}
+.perfume-text {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3px;
+}
+.perfume-paragrafo {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5rem;
+}
+.preco {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.preco-desconto {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(158, 36%, 37%);
+}
+.preco-sem-desconto {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+.botao-compra {
+  border-radius: 5px;
+  border-color: transparent;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  padding: 15px;
+  cursor: pointer;
+}
+.botao-compra img {
+  margin-right: 10px;
+}
+.botao-text {
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .card-display {
+    grid-template-columns: 1fr;
+  }
+  .card-display-text {
+    gap: 10px;
+  }
+  .perfume-titulo {
+    font-size: 1.8rem;
+  }
+  .card-display-img {
+    display: none;
+  }
+  .card-display-img-mobile {
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
